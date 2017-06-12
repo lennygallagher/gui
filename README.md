@@ -4,5 +4,6 @@
 - sudo apt install nodejs-legacy
 
 #Run GUI
-
+im gui projekt:
+- npm install
 - npm start

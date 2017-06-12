@@ -2,5 +2,5 @@
 .idea/
 _files/
 node_modules/
-src/**/*.js
-src/**/*.map
+src/app/**/*.js
+src/app/**/*.map
