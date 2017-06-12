@@ -1,5 +1,5 @@
 <div class="container">
-    <div [hidden]="submitted">
+    <div>
         <h1>Party Form</h1>
         <form (ngSubmit)="onSubmit()" #partyForm="ngForm">
             <div class="form-group">
@@ -28,12 +28,11 @@
 
             <button type="submit" class="btn btn-success" [disabled]="!partyForm.form.valid">Submit</button>
             <button type="button" class="btn btn-default" (click)="newParty(); partyForm.reset()">Reset</button>
-            <i>with</i> reset
 
         </form>
     </div>
     <div [hidden]="!submitted">
-        <h2>Party</h2>
+        <h2>Added Party:</h2>
         <div class="row">
             <div class="col-xs-3">Id</div>
             <div class="col-xs-9  pull-left">{{ model.id }}</div>

@@ -13,6 +13,8 @@ import 'rxjs/add/operator/map';
 export class PartyService {
     private partyServiceUrl: string = "http://localhost:8080/partyservice/resources/parties";
 
+    //private readPartyServiceUrl: string = "http://localhost:8080/partyservice/resources/parties";
+
     constructor (private http: Http) {}
 
     create(party: Party): Observable<Party> {
@@ -26,7 +28,7 @@ export class PartyService {
 
     private extractData(res: Response) {
         let body = res.json();
-        return body.data || { };
+        return body || { };
     }
 
     private handleError (error: Response | any) {
