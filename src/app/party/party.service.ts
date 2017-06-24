@@ -11,9 +11,9 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class PartyService {
-    private partyServiceUrl: string = "http://localhost:8081/partyservice/resources/parties";
+    private partyServiceUrl: string = "http://localhost:8091/partyservice/resources/parties";
 
-    private readPartyServiceUrl: string = "http://localhost:8082/partyservice.read/resources/parties";
+    private readPartyServiceUrl: string = "http://localhost:8092/partyservice.read/resources/parties";
 
     constructor (private http: Http) {}
 
