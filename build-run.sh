@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+cd $(dirname $0)
+
 if [ $# -eq 0 ]
   then
     echo "ERROR: Docker version for GUI is required as argument. E.q. 1.0.0"
